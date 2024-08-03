@@ -46,7 +46,6 @@ nav {
 }
 
 nav::before {
-
     content: '';
     position: absolute;
     top: 0;
@@ -55,22 +54,18 @@ nav::before {
     height: 100%;
     background: rgba(0, 0, 0, 0.5); /* Semi-transparent black overlay */
     z-index: 1; /* Ensure the overlay is above the background */
-
-
-
 }
 
 .nav-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
 }
 
 .logo {
     display: flex;
     align-items: center;
-    z-index:2;
+    z-index: 2;
 }
 
 .nav-menu {
@@ -78,8 +73,8 @@ nav::before {
     display: none;
     padding: 0;
     margin: 0;
-    z-index:2;
-    letter-spacing:5px;
+    z-index: 2;
+    letter-spacing: 5px;
 }
 
 .nav-menu li {
@@ -90,13 +85,13 @@ nav::before {
 .nav-menu li a {
     color: #fff;
     text-decoration: none;
-    padding:1lvh
+    padding: 1lvh;
 }
 
 .burger-menu {
     display: none;
     cursor: pointer;
-    z-index:3;
+    z-index: 3;
 }
 
 .burger-menu span {
@@ -110,7 +105,6 @@ nav::before {
 /* Hide the checkbox */
 .burger-toggle {
     display: none;
-    
 }
 
 .dropdown-menu {
@@ -165,12 +159,22 @@ nav::before {
     }
     .burger-menu {
         display: block;
-        z-index:3;
+        z-index: 3;
     }
 
     /* Show dropdown menu when checkbox is checked */
     .burger-toggle:checked ~ .dropdown-menu {
         display: block;
-        z-index:2;
+        z-index: 2;
     }
+}
+
+/* Content section styles */
+.content-section {
+    display: none;
+}
+
+/* Display the targeted section */
+#home:target, #about:target, #services:target, #products:target, #contact:target {
+    display: block;
 }
