@@ -1,0 +1,134 @@
+/* Base styles */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header, footer {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.container {
+    flex: 1;
+    display: block;
+}
+
+section {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+    position: relative;
+}
+
+.nav-menu {
+    list-style: none;
+    display: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-menu li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-menu li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.burger-menu {
+    display: none;
+    cursor: pointer;
+}
+
+.burger-menu span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 5px 0;
+}
+
+/* Hide the checkbox */
+.burger-toggle {
+    display: none;
+}
+
+.dropdown-menu {
+    display: none;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    background-color: #333;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+}
+
+.dropdown-menu li {
+    margin: 0;
+    padding: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.dropdown-menu li a {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+
+/* Media queries */
+@media (min-width: 600px) {
+    .container {
+        display: flex;
+    }
+    section {
+        flex: 1;
+        margin: 10px;
+    }
+}
+
+@media (min-width: 800px) {
+    .nav-menu {
+        display: block;
+    }
+    .burger-menu {
+        display: none;
+    }
+}
+
+@media (max-width: 800px) {
+    .nav-menu {
+        display: none;
+    }
+    .burger-menu {
+        display: block;
+    }
+
+    /* Show dropdown menu when checkbox is checked */
+    .burger-toggle:checked ~ .dropdown-menu {
+        display: block;
+    }
+}
