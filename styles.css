@@ -91,14 +91,16 @@ nav::before {
     margin: 0;
     display: block;
     text-align: center;
-    z-index: 2; /* Ensure hero text is above the overlay */
+    z-index: 1; /* Ensure hero text is above the overlay */
+    order: 2;
+    position: relative;
 }
 
 .hero-container p {
     font-family: bebas-neue-regular;
     font-size: 30px;
     font-weight:100;
-    z-index: 3;
+    z-index: 1;
     
     
 }
@@ -109,7 +111,7 @@ nav::before {
     font-weight:1700;
     letter-spacing: 6px;
     text-shadow: 2ch black 3px;
-    z-index: 3;
+    z-index: 1;
 }
 
 
@@ -189,7 +191,8 @@ nav::before {
     right:0;
     left:0;
     width: 100%;
-    z-index: 5;
+    z-index: 10;
+    order: 1;
    
 }
 
@@ -259,12 +262,13 @@ nav::before {
     .burger-menu {
         display: block;
         z-index: 5;
+        z-index: 11;
     }
 
     /* Show dropdown menu when checkbox is checked */
     .burger-toggle:checked ~ .dropdown-menu {
         display: block;
-        z-index: 4;
+        z-index: 10;
        
     }
 }
@@ -277,10 +281,11 @@ nav::before {
 /* Display the targeted section */
 #home:target, #about:target, #services:target, #products:target, #contact:target {
     display: block;
+    
    
 }
 
-.willkommen {font-weight: 100; font-size:14px; letter-spacing: 10px;;}
+.willkommen {font-weight: 100; font-size:14px; letter-spacing: 10px; order: 3;}
 
 
 .section-style1 {
@@ -346,7 +351,7 @@ nav::before {
 div { margin:0; padding:0;}
 
 .zeit:hover {
-    background-color:#333
+    background-color: #aa6c0e;
 }
 .padding10 { padding:10px;}
 .padding0 { padding:0;}
