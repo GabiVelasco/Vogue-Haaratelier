@@ -37,8 +37,7 @@ header, footer {
 
 section {
     padding: 20px;
-    border: 1px solid #ccc;
-    margin: 10px 0;
+    margin: 0;
 
 }
 
@@ -92,13 +91,15 @@ nav::before {
     margin: 0;
     display: block;
     text-align: center;
-    z-index: 1; /* Ensure hero text is above the overlay */
+    z-index: 2; /* Ensure hero text is above the overlay */
 }
 
 .hero-container p {
     font-family: bebas-neue-regular;
     font-size: 30px;
     font-weight:100;
+    z-index: 3;
+    
     
 }
 
@@ -108,6 +109,7 @@ nav::before {
     font-weight:1700;
     letter-spacing: 6px;
     text-shadow: 2ch black 3px;
+    z-index: 3;
 }
 
 
@@ -214,6 +216,7 @@ nav::before {
     text-decoration: none;
     display: block;
     font-weight:bold;
+    z-index: 5;
     
 }
 
@@ -238,6 +241,11 @@ nav::before {
     }
     .burger-menu {
         display: none;
+        z-index: 5;
+    }
+    .dropdown-menu {z-index: 5;
+
+
     }
 
 
@@ -250,13 +258,14 @@ nav::before {
     }
     .burger-menu {
         display: block;
-        z-index: 4;
+        z-index: 5;
     }
 
     /* Show dropdown menu when checkbox is checked */
     .burger-toggle:checked ~ .dropdown-menu {
         display: block;
-        z-index: 2;
+        z-index: 4;
+       
     }
 }
 
@@ -272,3 +281,62 @@ nav::before {
 }
 
 .willkommen {font-weight: 100; font-size:14px; letter-spacing: 10px;;}
+
+
+.section-style1 {
+
+    color: white;
+    background-color:black;
+}
+
+/* Container for the flip effect */
+.flip-container {
+    perspective: 1000px; /* Gives a perspective to the 3D effect */
+    width: 100%; /* Adjust width as needed */
+    height: 200px; /* Adjust height as needed */
+}
+
+/* The flipping container */
+.flipper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s; /* Smooth transition for the flip effect */
+    transform-style: preserve-3d; /* Enables 3D space for children */
+}
+
+/* Flip effect on hover or click */
+.flip-container:hover .flipper,
+.flip-container:focus .flipper {
+    transform: rotateX(180deg); /* Flips the container */
+}
+
+/* Front and back sides */
+.front, .back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden; /* Hides the back side when facing away */
+}
+
+/* The front side */
+.front {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+/* The back side */
+.back {
+    background-color: #aa6c0e;
+    color: #fff; /* Adjust text color as needed */
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    box-sizing: border-box;
+    transform: rotateX(180deg); /* Start the back side rotated 180 degrees */
+}
+
+div { margin:0; padding:0;}
