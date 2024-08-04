@@ -291,6 +291,8 @@ nav::before {
 
 /* Container for the flip effect */
 .flip-container {
+    margin: 0; padding:0;
+    padding-bottom: 20px;
     perspective: 1000px; /* Gives a perspective to the 3D effect */
     width: 100%; /* Adjust width as needed */
     height: 200px; /* Adjust height as needed */
@@ -298,6 +300,7 @@ nav::before {
 
 /* The flipping container */
 .flipper {
+    margin: 0; padding:0;
     position: relative;
     width: 100%;
     height: 100%;
@@ -308,6 +311,7 @@ nav::before {
 /* Flip effect on hover or click */
 .flip-container:hover .flipper,
 .flip-container:focus .flipper {
+    margin: 0; padding:0;
     transform: rotateX(180deg); /* Flips the container */
 }
 
