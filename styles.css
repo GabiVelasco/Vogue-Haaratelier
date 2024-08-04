@@ -78,14 +78,25 @@ nav::before {
 }
 
 .nav-menu li {
-    display: inline;
     margin-right: 20px;
+    display: inline-block;
 }
 
 .nav-menu li a {
     color: #fff;
     text-decoration: none;
     padding: 1lvh;
+    font-weight: lighter;
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease, all 0.3s ease; /* Apply transition to transform and color */
+}
+
+.nav-menu li a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding: 1lvh;
+    font-weight: lighter;
+    transform: scale(1.2); /* Slightly scale up the font size */
 }
 
 .burger-menu {
@@ -100,6 +111,7 @@ nav::before {
     height: 3px;
     background-color: #fff;
     margin: 5px 0;
+    
 }
 
 /* Hide the checkbox */
@@ -114,7 +126,7 @@ nav::before {
     margin: 0;
     background-color: #333;
     position: absolute;
-    top: 40px;
+    top: 0px;
     right: 0;
     width: 100%;
 }
@@ -129,6 +141,18 @@ nav::before {
     color: #fff;
     text-decoration: none;
     display: block;
+    font-weight:normal;
+    transition:font-weight 0.3 ease ;
+    
+}
+
+
+.dropdown-menu li a:hover {
+    color: #fff;
+    text-decoration: none;
+    display: block;
+    font-weight:bold;
+    
 }
 
 /* Media queries */
