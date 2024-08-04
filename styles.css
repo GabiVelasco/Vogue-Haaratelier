@@ -285,7 +285,7 @@ nav::before {
    
 }
 
-.willkommen {font-weight: 100; font-size:14px; letter-spacing: 10px; order: 3;}
+.willkommen {font-weight: 100; font-size:larger; letter-spacing: 10px; order: 3;}
 
 
 .section-style1 {
@@ -356,3 +356,5 @@ div { margin:0; padding:0;}
 .padding10 { padding:10px;}
 .padding0 { padding:0;}
 .padding5 { padding:5px;}
+
+.negativepadding { padding:-2rem; margin:-0.9rem;}
