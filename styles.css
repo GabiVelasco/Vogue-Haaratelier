@@ -10,6 +10,10 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+
+    overflow: auto; /* Allows scrolling */
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
 }
 
 body {
@@ -449,7 +453,7 @@ div { margin:0; padding:0;}
 }
 
 .kontakt:hover {
-    background-color: rgba(170, 108, 14, 0.404); 
+    /* background-color: rgba(170, 108, 14, 0.404);  */
 }
 
 
