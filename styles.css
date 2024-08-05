@@ -1,6 +1,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
 
+
+
+/* Reset default styles */
+body, ul, li, a {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+}
 /* Base styles */
 body, html {
     margin: 0;
@@ -69,9 +79,6 @@ width:100;
 }
 
 
-
-
-
 nav::before {
     content: '';
     position: absolute;
@@ -107,6 +114,22 @@ nav::before {
     z-index: 1; /* Ensure hero text is above the overlay */
     order: 2;
     position: relative;
+}
+
+.willkommen { 
+    font-weight: 100; 
+    font-size:larger; 
+    letter-spacing: 10px; 
+    order: 3;
+    position: relative;
+    
+   
+    
+}
+
+
+main {
+    margin-top: 160px; /* Adjust to accommodate header and hero */
 }
 
 .hero-container p {
@@ -352,7 +375,6 @@ nav::before {
    
 }
 
-.willkommen {font-weight: 100; font-size:larger; letter-spacing: 10px; order: 3;}
 
 
 .section-style1 {
@@ -468,10 +490,11 @@ div { margin:0; padding:0;}
     height:100%;
     padding:20px;
     margin:0;
+    transition: transform 3.3s ease, color 3.3s ease, all 3.3s ease;
 }
 
 .kontakt:hover {
-    /* background-color: rgba(170, 108, 14, 0.404);  */
+    background-color: rgba(170, 108, 14, 0.404); 
 }
 
 
@@ -479,8 +502,13 @@ div { margin:0; padding:0;}
 .kontakt p { font-size: 30px; font-weight:300}
 .kontakt span { font-size: 30px; font-weight:300}
 
+
+.zeit{
+    transition: transform 0.5s ease, color 0.5s ease, all 0.5s ease; 
+}
 .zeit:hover {
     background-color: #aa6c0e;
+    
 }
 
 .zeiten h1 {
