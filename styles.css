@@ -44,7 +44,7 @@ section {
 /* Navigation styles */
 nav {
     background-color: #333;
-    background-image: url("saloon2.jpg");
+    background-image: url("headbackground1.jpg");
     background-position: 0;
     background-repeat: no-repeat;
     background-size: cover;
@@ -415,8 +415,7 @@ div { margin:0; padding:0;}
 }   
 
 .kontakt {
-    background-color: rgba(170, 108, 14, 0.815); /* Use rgba for semi-transparent background */
-
+    background-color: rgba(0, 0, 0, 0.596);
     width: 100%; /* Take half of the parent container */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
     color: #fff; /* Text color */
@@ -427,7 +426,7 @@ div { margin:0; padding:0;}
 }
 
 .kontakt:hover {
-    background-color: rgba(0, 0, 0, 0.596); /* Slight background color change on hover */
+    background-color: rgba(170, 108, 14, 0.404); 
 }
 
 
