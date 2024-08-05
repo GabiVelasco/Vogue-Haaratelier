@@ -441,23 +441,23 @@ div { margin:0; padding:0;}
 .zeiten h1 {
      font-size:40px;
      text-align:center;
-     font-weight:400
+     font-weight:100
 }
 
 .zeiten h2 {
     font-size:30px;
-    font-weight:300
+    font-weight:100;
 }
 
 .zeiten h3 {
     font-size:25px;
-    font-weight:300
+    font-weight:300;
 }
 
 
 .zeiten p {
    font-size:20px;
-   font-weight:300
+   font-weight:300;
 }
 
 
