@@ -330,7 +330,7 @@ nav::before {
     backface-visibility: hidden; /* Hides the back side when facing away */
 }
 
-.back p {font-weight: 100;}
+.back p {font-weight: 100; text-align:center;}
 
 /* The front side */
 .front {
