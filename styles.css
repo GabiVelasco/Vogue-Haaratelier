@@ -57,11 +57,14 @@ header {
     padding: 10px;
     position: relative;
     height: 400px;
+    border-bottom:#333 3px solid;
+   
 }
 
 /* Navigation styles */
 nav {
 width:100;
+
  
 }
 
@@ -171,7 +174,7 @@ nav::before {
     cursor: pointer;
     z-index: 4;
     
-    
+   
 
    
 }
@@ -183,11 +186,17 @@ nav::before {
     background-color: #fff;
     margin: 5px;
     
+    
+    
 }
 
 /* Hide the checkbox */
 .burger-toggle {
     display: none;
+    
+    
+   
+    
 }
 
 .dropdown-menu {
@@ -259,6 +268,7 @@ nav::before {
     .burger-menu {
         display: none;
         z-index: 5;
+        
     }
     .dropdown-menu {z-index: 5;
 
@@ -285,6 +295,8 @@ nav::before {
     .burger-toggle:checked ~ .dropdown-menu {
         display: block;
         z-index: 10;
+        
+   
        
     }
 
