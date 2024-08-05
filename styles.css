@@ -224,7 +224,7 @@ nav::before {
 }
 
 /* Media queries */
-@media (min-width: 600px) {
+@media (min-width: 700px) {
     .container {
         display: flex;
     }
@@ -278,6 +278,14 @@ nav::before {
        
     }
 
+    .about-container {
+        font-size: 20px;
+    }
+
+    .services-container {
+        font-size: 20px;
+    }
+
     .produkte-container {
         font-size: 20px;
         /* Here you can override border styles if needed, but the main change is in the 600px query */
@@ -286,12 +294,27 @@ nav::before {
  
 }
 
-@media (max-width: 600px) {
+@media (max-width: 700px) {
+    .about-container {
+        font-size: 20px;
+        border-top: 5px solid  #aa6c0e; /* Add a horizontal line on the top */
+        border-left: none; /* Remove the left border */
+    }
+
+    
+    .services-container {
+        font-size: 20px;
+        border-top: 5px solid  #aa6c0e; /* Add a horizontal line on the top */
+        border-left: none; /* Remove the left border */
+    }
+    
     .produkte-container {
         font-size: 20px;
         border-top: 5px solid  #aa6c0e; /* Add a horizontal line on the top */
         border-left: none; /* Remove the left border */
     }
+
+    
 
 }
 
@@ -481,13 +504,39 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
     font-size: 30px;
 }
 
-.produkte { 
+
+.about { 
     padding:20px; 
     font-size:4vh; 
     letter-spacing:5px; 
     font-weight:100;
 }
 
+.about-container {
+    font-size: 20px;
+    border-left: 5px solid #aa6c0e; /* Add a vertical line on the left */
+}
+
+
+.services { 
+    padding:20px; 
+    font-size:4vh; 
+    letter-spacing:5px; 
+    font-weight:100;
+}
+
+.services-container {
+    font-size: 20px;
+    border-left: 5px solid #aa6c0e; /* Add a vertical line on the left */
+}
+
+
+.produkte { 
+    padding:20px; 
+    font-size:4vh; 
+    letter-spacing:5px; 
+    font-weight:100;
+}
 
 
 .produkte-container {
@@ -515,8 +564,17 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
 
 
 /* Media queries */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
 
+
+    .about-container {
+        border-left: none; /* Remove left border */
+        
+    } 
+    .services-container {
+        border-left: none; /* Remove left border */
+        
+    }
 
     .produkte-container {
         border-left: none; /* Remove left border */
@@ -528,3 +586,4 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
     }
 
 }
+
