@@ -44,8 +44,8 @@ section {
 
 }
 
-/* Navigation styles */
-nav {
+header {
+
     background-color: #333;
     background-image: url("headbackground1_1_25.jpg");
     background-position: 0;
@@ -55,6 +55,11 @@ nav {
     padding: 10px;
     position: relative;
     height: 400px;
+}
+
+/* Navigation styles */
+nav {
+width:100;
  
 }
 
