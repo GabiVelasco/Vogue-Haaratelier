@@ -10,7 +10,6 @@ body, html {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-
     overflow: auto; /* Allows scrolling */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
