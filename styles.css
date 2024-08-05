@@ -354,9 +354,7 @@ nav::before {
 
 div { margin:0; padding:0;}
 
-.zeit:hover {
-    background-color: #aa6c0e;
-}
+
 
 
 
@@ -378,23 +376,46 @@ div { margin:0; padding:0;}
     width: 100%; /* Take half of the parent container */
     box-sizing: border-box; /* Ensure padding and border are included in the width */
     color: #fff; /* Text color */
-    text-align: left; /* Center the text */
+    text-align: center; /* Center the text */
     height:100%;
     padding:20px;
     margin:0;
 }
 
 .kontakt:hover {
-    background-color: rgba(0, 0, 0, 0.733); /* Slight background color change on hover */
+    background-color: rgba(0, 0, 0, 0.596); /* Slight background color change on hover */
 }
 
 
-.kontakt h1 { font-size:40px;}
-.kontakt p { font-size: 30px;}
+.kontakt h1 { font-size:40px; font-weight:400}
+.kontakt p { font-size: 30px; font-weight:300}
+.kontakt span { font-size: 30px; font-weight:300}
+
+.zeit:hover {
+    background-color: #aa6c0e;
+}
+
+.zeiten h1 {
+     font-size:40px;
+     text-align:center;
+     font-weight:400
+}
+
+.zeiten h2 {
+    font-size:30px;
+    font-weight:300
+}
+
+.zeiten h3 {
+    font-size:25px;
+    font-weight:300
+}
 
 
-
-
+.zeiten p {
+   font-size:20px;
+   font-weight:300
+}
 
 
 
@@ -415,6 +436,17 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
     margin-left:0;
     
 }
+
+.span1linecenter {
+    display: block;
+    width: 50px;
+    height: 2px;
+    background-color: #fff;
+    margin: 5px;
+    text-align: center;
+   
+    
+}
 .hundertvh {width:100vh;}
 
 .padding10 { padding-top:10px;margin-top:10px;}
@@ -422,3 +454,9 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
 .padding5 { padding-top:5px;}
 
 .negativepadding { padding-top:-2rem; margin-top:-0.9rem;}
+
+
+.footer h1 {
+    font-weight:100;
+    font-size: 30px;
+}
