@@ -23,7 +23,7 @@ body, html {
     overflow: auto; /* Allows scrolling */
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; 
 }
 
 body {
@@ -35,7 +35,6 @@ body {
 
 footer {
     color: #fff;
-    padding: 10px;
     border-top:#333 3px solid;
 }
 
@@ -714,18 +713,23 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
 .footer {
     background-color: #333;
     color: white;
-    padding:10px;
     height: fit-content;
     width:100%;
     margin:0;
     max-height: 200px;
     bottom: 0;
+    left:0;
+    right: 0;
 
 }
 
 footer .container {
     flex: 1;
     display: block;
+    margin: 0;
+    padding:0;
+    left:0;
+    right:0;
 }
 
 footer section {
@@ -737,7 +741,6 @@ footer section {
 
 .footer-container {
     margin: 0; 
-   
     left:0;
     height: fit-content;
     
