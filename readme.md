@@ -1,6 +1,6 @@
-# Ipek Haarstudio Website
+# Vogue Atelier Website
 
-This is a static website project for the Ipek Haarstudio, created by the web developer Gabriela Velasco. The website is designed to provide information about the hair salon, including its services, products, and contact information.
+This is a static website project for Vogue Atelier, created by the web developer Gabriela Velasco. The website is designed to provide information about the hair salon, including its services, products, and contact information.
 
 ## Table of Contents
 
@@ -14,7 +14,7 @@ This is a static website project for the Ipek Haarstudio, created by the web dev
 
 ## Description
 
-The Ipek Haarstudio website is a single-page application that uses HTML and CSS to create a responsive and visually appealing interface. It includes sections such as Home, About, Services, Products, and Contact, with smooth scrolling navigation.
+The Vogue Atelier website is a single-page application that uses HTML and CSS to create a responsive and visually appealing interface. It includes sections such as Home, About, Services, Products, and Contact, with smooth scrolling navigation.
 
 ## Features
 
@@ -37,11 +37,11 @@ To set up the project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone https://github.com/GabrielaVelasco_Sites/Ipek-Haarstudio.git
+    git clone https://github.com/GabrielaVelasco_Sites/Vogue-Atelier.git
     ```
 2. Navigate to the project directory:
     ```bash
-    cd Ipek-Haarstudio
+    cd Vogue-Atelier
     ```
 
 ## Usage
