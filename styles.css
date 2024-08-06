@@ -117,15 +117,24 @@ nav::before {
 }
 
 .willkommen { 
+  
     font-weight: 100; 
     font-size:larger; 
     letter-spacing: 10px; 
     order: 3;
     position: relative;
-    
+    display: block;
    
     
 }
+
+
+
+
+
+
+
+
 
 
 main {
@@ -375,7 +384,33 @@ main {
    
 }
 
+/* -----------------------------------start */
 
+:not()#home:target + .willkommen {
+    display: none;
+}
+
+:not().home:target + .willkommen {
+    display: none;
+}
+
+
+/* Hide willkommen by default */
+.willkommen-wrapper {
+    display: none;
+}
+
+/* Show willkommen when #home is targeted */
+#home:target ~ .willkommen-wrapper {
+    display: block;
+}
+
+/* Ensures .willkommen is hidden when other sections are targeted */
+:not(#home):target ~ .willkommen-wrapper {
+    display: none;
+}
+
+/* _________ END */
 
 .section-style1 {
 

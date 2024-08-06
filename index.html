@@ -6,14 +6,15 @@
     <title>Hairstudio Sindelfingen</title>
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <nav>
+<body id="body-content" class="home">
+<header id="main-header">
 
-<div class="nav-container">
-    <div class="logo">
-        <img src="img/logo2.png" alt="Logo" width="100px">
-    </div>
+<nav>
+    <div class="nav-container">
+
+        <div class="logo">
+            <img src="img/logo2.png" alt="Logo" width="100px">
+        </div>
 
         <input type="checkbox" id="burger-toggle" class="burger-toggle">
         <label for="burger-toggle" class="burger-menu">
@@ -22,41 +23,38 @@
                 <span></span>
         </label>
 
-   
-    
+        <ul class="nav-menu">
+            <li><a class="home" href="#home">Home</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#services">Leistungen</a></li>
+            <li><a href="#products">Produkte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
 
+        <ul class="dropdown-menu">
+            
+            <li><a class="home" href="#home">Home</a></li>
+            <li><a href="#about">Über uns</a></li>
+            <li><a href="#services">Leistungen</a></li>
+            <li><a href="#products">Produkte</a></li>
+            <li><a href="#contact">Kontakt</a></li>
+        </ul>
+    </div>   
 
-    <ul class="nav-menu">
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Über uns</a></li>
-        <li><a href="#services">Leistungen</a></li>
-        <li><a href="#products">Produkte</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-    </ul>
-
-    <ul class="dropdown-menu">
+    <div class="hero-container">
+        <div class="home"></div>
+        <div class="willkommen-wraper home">
+            <p class="willkommen">HERZLICH WILLKOMEN </p>
+        </div>
         
-        <li><a href="#home">Home</a></li>
-        <li><a href="#about">Über uns</a></li>
-        <li><a href="#services">Leistungen</a></li>
-        <li><a href="#products">Produkte</a></li>
-        <li><a href="#contact">Kontakt</a></li>
-    </ul>
-</div>   
-
-
-<div class="hero-container">
-    <p class="willkommen">HERZLICH WILLKOMEN </p>
-    <br> 
-    <span>IPEK <p class="negativepadding">Haarsaloon</p></span>
-</div>
-
-</div>     
+        <br> 
+        <span>IPEK <p class="negativepadding">Haarsaloon</p></span>
+    </div>
 </nav>
-</header>
 
+</header>
 <main>
-    <div class="container ">
+    <div class="container">
         <section id="home" class="content-section flex">
             <div class="padding5"></div>
 
@@ -233,7 +231,11 @@
        <p>Feldbergstr.75 <br>  71067 Sindelfingen  <br> Tel: 07031/688217</p> 
         <br><br>
     </section>
-    <span><img src="address3.png" alt=""  width="100px;"></span>
+    <section>
+        <span><img src="img/address3.png" alt=""  width="100px;"></span>
+
+    </section>
+ 
     <section>
         <p>Watzmannstr.2  <br> 71067 Sindelfingen <br> Tel: 07031/7620565</p>
     </section>
@@ -293,3 +295,4 @@
     </footer>
 </body>
 </html>
+
