@@ -32,8 +32,8 @@ body {
     justify-content: space-between;
 }
 
-header, footer {
-    background-color: #333;
+
+footer {
     color: #fff;
     padding: 10px;
 }
@@ -686,41 +686,98 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
     transform: scale(1.05); /* Slightly scale up the font size */
 }
 
+.infos-container{
+    background-color: #ffffff;
+    width: 100%;
+    padding:0;
+    margin:0;
+    height: fit-content;
+    color: black;
+    left:0;
+    top:0;
+    display: flex;
+    flex-direction:row;
+
+}
+
+.infos-container > section {
+
+    background-color: white;
+    width: 100px;
+    margin: 10px;
+    text-align: center;
+
+
+}
+
 .footer {
     background-color: #333;
-    color: #fff;
+    color: white;
+    padding:10px;
+    height: fit-content;
+    width:100%;
+    margin:0;
+    max-height: 200px;
+    bottom: 0;
+
+}
+
+footer .container {
+    flex: 1;
+    display: block;
+}
+
+footer section {
     padding: 20px;
+    margin: 0;
+    scroll-margin-top: 600px;
+
 }
 
 .footer-container {
-    max-width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-items: center;
+    margin: 0; 
+   
+    left:0;
+    height: fit-content;
+    
 }
+
 
 .footer h1 {
     font-weight: 100;
-    font-size: 30px;
+    font-size: 20px;
     color: #aa6c0e;
     margin: 0;
-    text-align: center;
+    text-align: left;
     flex: 1 1 100%;
+    
 }
 
-.footer-info, .footer-social {
+.footer-info, .infos-social {
     flex: 1;
     margin: 10px;
-    text-align: center;
+    text-align: left;
 }
 
-.footer-info p, .footer-social p {
+.footer-links {
+    justify-content:left;
+    align-items: flex-start;
+    color:#aa6c0e;
+    display:block;
+}
+.links p,a {
+    font-size: 16px;
+    color:#aa6c0e;
+    display:block;
+    align-content: left;
+
+}
+
+.footer-info p, .infos-social p {
     margin: 5px 0;
 }
 
-.footer-social {
+.infos-social {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -742,13 +799,24 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
 
 @media (max-width: 800px) {
     .footer-container {
-        flex-direction: column;
-        text-align: center;
+      display: block;
     }
 
-    .footer-info, .footer-social {
+    .footer-info, .infos-social {
         flex: 1 1 100%;
         margin: 10px 0;
+    }
+
+    .infos-container{
+        width: 100%;
+        display: block;
+    
+    }
+
+    .infos-container > section{
+        width: 100%;
+        display: block;
+    
     }
 }
 
