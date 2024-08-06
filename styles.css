@@ -205,6 +205,9 @@ main {
     display: none;
     cursor: pointer;
     z-index: 4;
+    margin-top:-60px;
+    padding:10px;
+ 
     
    
 
