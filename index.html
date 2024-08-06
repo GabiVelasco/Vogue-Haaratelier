@@ -294,5 +294,23 @@
 
     </footer>
 </body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const willkommen = document.querySelector('.willkommen');
+        
+        function updateVisibility() {
+            const hash = window.location.hash;
+            if (hash === '#home') {
+                willkommen.style.display = 'block';
+            } else {
+                willkommen.style.display = 'none';
+            }
+        }
+
+        window.addEventListener('hashchange', updateVisibility);
+        updateVisibility(); // Initial check
+    });
+</script>
 </html>
 
