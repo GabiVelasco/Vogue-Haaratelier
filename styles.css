@@ -739,12 +739,17 @@ footer section {
 
 }
 
+
+
 .footer-container {
     margin: 0; 
     left:0;
     height: fit-content;
     
 }
+
+.footer-text {width:85%; padding:20px; color:#aa6c0e;
+    display:block; text-align: center;}
 
 
 .footer h1 {
