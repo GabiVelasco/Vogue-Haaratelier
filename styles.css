@@ -523,7 +523,7 @@ div { margin:0; padding:0;}
     color: #fff; /* Text color */
     text-align: center; /* Center the text */
     height:100%;
-    padding:20px;
+    padding:10px;
     margin:0;
     transition: transform 3.3s ease, color 3.3s ease, all 3.3s ease;
 }
