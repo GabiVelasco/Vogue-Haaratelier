@@ -384,7 +384,7 @@ main {
    
 }
 
-/* -----------------------------------start */
+/* -----------------------------------start NOT working to HIDE only with css */
 
 :not()#home:target + .willkommen {
     display: none;
