@@ -129,7 +129,7 @@ nav::before {
 
 
 main {
-    margin-top: 160px; /* Adjust to accommodate header and hero */
+    margin-top: 0 /* Adjust to accommodate header and hero */
 }
 
 .hero-container p {
