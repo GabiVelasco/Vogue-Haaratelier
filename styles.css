@@ -723,7 +723,7 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
 
 }
 
-footer .container {
+footer .container, .infos-container {
     flex: 1;
     display: block;
     margin: 0;
