@@ -512,7 +512,7 @@ div { margin:0; padding:0;}
     display: flex; /* Use flexbox to manage the layout */
     justify-content: center; /* Center the content horizontally */
     align-items: center; /* Center the content vertically */
-    height: 100vh; /* Make the container take full viewport height */
+    height: fit-content; /* Make the container take full viewport height */
     width:100%;
 }   
 
@@ -523,23 +523,25 @@ div { margin:0; padding:0;}
     color: #fff; /* Text color */
     text-align: center; /* Center the text */
     height:100%;
-    padding:10px;
+    padding:20px;
     margin:0;
     transition: transform 3.3s ease, color 3.3s ease, all 3.3s ease;
 }
 
 .kontakt:hover {
-    background-color: rgba(170, 108, 14, 0.404); 
+    background-color: rgba(99, 61, 9, 0.466); 
 }
 
 
-.kontakt h1 { font-size:40px; font-weight:400}
-.kontakt p { font-size: 30px; font-weight:300}
-.kontakt span { font-size: 30px; font-weight:300}
+.kontakt h1 { font-size:40px; font-weight:100; letter-spacing:5px;}
+.kontakt h2 { font-size:30px; font-weight:100; letter-spacing:5px;}
+.kontakt p { font-size: 20px; font-weight:300; letter-spacing:5px;}
+.kontakt span { font-size: 25px; font-weight:100;letter-spacing:5px;}
 
 
 .zeit{
     transition: transform 0.5s ease, color 0.5s ease, all 0.5s ease; 
+    letter-spacing:2px;
 }
 .zeit:hover {
     background-color: #aa6c0e;
@@ -705,8 +707,5 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
         border-left: none; /* Remove left border */
         
     }
-    .goldwelllogo {
-        
-
-}
+  
 }
