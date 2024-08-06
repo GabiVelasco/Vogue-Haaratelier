@@ -1,6 +1,6 @@
 # Ipek Haarstudio Website
 
-This is a static website project for the Ipek Haarstudio, created by Gabriela Velasco, a web developer. The website is designed to provide information about the hair salon, including its services, products, and contact information.
+This is a static website project for the Ipek Haarstudio, created by the web developer Gabriela Velasco. The website is designed to provide information about the hair salon, including its services, products, and contact information.
 
 ## Table of Contents
 
