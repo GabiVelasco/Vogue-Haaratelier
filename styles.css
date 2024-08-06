@@ -664,10 +664,27 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
     transform: scale(0.9);
 }
 
-.goldwelllogo {
+.wellalogo {
     padding:20px;
     padding-left:0;
     
+}
+
+.wellalogo a{
+    color: #fff;
+    text-decoration: none;
+    padding: 1lvh;
+    font-weight: lighter;
+    display: inline-block;
+    transition: transform 0.7s ease, color 0.7s ease, all 0.7s ease; /* Apply transition to transform and color */
+}
+
+.wellalogo a:hover {
+    color: #fff;
+    text-decoration: none;
+    padding: 1lvh;
+    font-weight: lighter;
+    transform: scale(1.05); /* Slightly scale up the font size */
 }
 
 
@@ -691,7 +708,5 @@ background-color: rgba(197, 145, 0, 0.411); position: absolute; width: 100%; hei
     .goldwelllogo {
         
 
-    }
-
 }
-
+}
