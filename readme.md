@@ -2,6 +2,8 @@
 
 This is a static website project for Vogue Atelier, created by the web developer Gabriela Velasco. The website is designed to provide information about the hair salon, including its services, products, and contact information.
 
+https://gabivelasco.github.io/Vogue-Haaratelier/
+
 ## Table of Contents
 
 - [Description](#description)
